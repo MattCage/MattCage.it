@@ -4,15 +4,43 @@
 
 
 .jumbotron {
+  min-height: 75%;
   padding-top:    @jumbotron-padding;
   padding-bottom: @jumbotron-padding;
   margin-bottom: @jumbotron-padding;
   color: @jumbotron-color;
   background-color: @jumbotron-bg;
+  overflow: hidden;
+  
+  div > div {
+    .container-fixed();
+    
+    width: 100%;
+    height: 75%;
+    padding-top:    @jumbotron-padding;
+    padding-bottom: @jumbotron-padding;
+    top: -2px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: table;
+    overflow: hidden;
 
-  h1,
-  .h1 {
-    color: @jumbotron-heading-color;
+    h1,
+    .h1 {
+      color: @jumbotron-heading-color;
+      font-weight: 700;
+      text-shadow: 1px 1px #a07c17, 2px 2px #a07c17, 3px 3px #a07c17, 4px 4px #a07c17, 5px 5px #a07c17, 6px 6px #a07c17, 7px 7px #a07c17, 8px 8px #a07c17, 9px 9px #a07c17, 10px 10px #a07c17, 11px 11px #a07c17, 12px 12px #a07c17, 13px 13px #a07c17, 14px 14px #a07c17, 15px 15px #a07c17, 16px 16px #a07c17, 17px 17px #a07c17, 18px 18px #a07c17, 19px 19px #a07c17, 20px 20px #a07c17, 21px 21px #a07c17, 22px 22px #a07c17, 23px 23px #a07c17, 24px 24px #a07c17, 25px 25px #a07c17, 26px 26px #a07c17, 27px 27px #a07c17, 28px 28px #a07c17, 29px 29px #a07c17, 30px 30px #a07c17, 31px 31px #a07c17, 32px 32px #a07c17, 33px 33px #a07c17, 34px 34px #a07c17, 35px 35px #a07c17, 36px 36px #a07c17, 37px 37px #a07c17, 38px 38px #a07c17, 39px 39px #a07c17, 40px 40px #a07c17, 41px 41px #a07c17, 42px 42px #a07c17, 43px 43px #a07c17, 44px 44px #a07c17, 45px 45px #a07c17, 46px 46px #a07c17, 47px 47px #a07c17, 48px 48px #a07c17, 49px 49px #a07c17, 50px 50px #a07c17, 51px 51px #a07c17, 52px 52px #a07c17, 53px 53px #a07c17, 54px 54px #a07c17, 55px 55px #a07c17, 56px 56px #a07c17, 57px 57px #a07c17, 58px 58px #a07c17, 59px 59px #a07c17, 60px 60px #a07c17, 61px 61px #a07c17, 62px 62px #a07c17, 63px 63px #a07c17, 64px 64px #a07c17, 65px 65px #a07c17, 66px 66px #a07c17, 67px 67px #a07c17, 68px 68px #a07c17, 69px 69px #a07c17, 70px 70px #a07c17, 71px 71px #a07c17, 72px 72px #a07c17, 73px 73px #a07c17, 74px 74px #a07c17, 75px 75px #a07c17, 76px 76px #a07c17, 77px 77px #a07c17, 78px 78px #a07c17, 79px 79px #a07c17, 80px 80px #a07c17, 81px 81px #a07c17, 82px 82px #a07c17, 83px 83px #a07c17, 84px 84px #a07c17, 85px 85px #a07c17, 86px 86px #a07c17, 87px 87px #a07c17, 88px 88px #a07c17, 89px 89px #a07c17, 90px 90px #a07c17, 91px 91px #a07c17, 92px 92px #a07c17, 93px 93px #a07c17, 94px 94px #a07c17, 95px 95px #a07c17, 96px 96px #a07c17, 97px 97px #a07c17, 98px 98px #a07c17, 99px 99px #a07c17, 100px 100px #a07c17, 101px 101px #a07c17, 102px 102px #a07c17, 103px 103px #a07c17, 104px 104px #a07c17, 105px 105px #a07c17, 106px 106px #a07c17, 107px 107px #a07c17, 108px 108px #a07c17, 109px 109px #a07c17, 110px 110px #a07c17, 111px 111px #a07c17, 112px 112px #a07c17, 113px 113px #a07c17, 114px 114px #a07c17, 115px 115px #a07c17, 116px 116px #a07c17, 117px 117px #a07c17, 118px 118px #a07c17, 119px 119px #a07c17, 120px 120px #a07c17, 121px 121px #a07c17, 122px 122px #a07c17, 123px 123px #a07c17, 124px 124px #a07c17, 125px 125px #a07c17, 126px 126px #a07c17, 127px 127px #a07c17, 128px 128px #a07c17, 129px 129px #a07c17, 130px 130px #a07c17, 131px 131px #a07c17, 132px 132px #a07c17, 133px 133px #a07c17, 134px 134px #a07c17, 135px 135px #a07c17, 136px 136px #a07c17, 137px 137px #a07c17, 138px 138px #a07c17, 139px 139px #a07c17, 140px 140px #a07c17, 141px 141px #a07c17, 142px 142px #a07c17, 143px 143px #a07c17, 144px 144px #a07c17, 145px 145px #a07c17, 146px 146px #a07c17, 147px 147px #a07c17, 148px 148px #a07c17, 149px 149px #a07c17, 150px 150px #a07c17, 151px 151px #a07c17, 152px 152px #a07c17, 153px 153px #a07c17, 154px 154px #a07c17, 155px 155px #a07c17, 156px 156px #a07c17, 157px 157px #a07c17, 158px 158px #a07c17, 159px 159px #a07c17, 160px 160px #a07c17, 161px 161px #a07c17, 162px 162px #a07c17, 163px 163px #a07c17, 164px 164px #a07c17, 165px 165px #a07c17, 166px 166px #a07c17, 167px 167px #a07c17, 168px 168px #a07c17, 169px 169px #a07c17, 170px 170px #a07c17, 171px 171px #a07c17, 172px 172px #a07c17, 173px 173px #a07c17, 174px 174px #a07c17, 175px 175px #a07c17, 176px 176px #a07c17, 177px 177px #a07c17, 178px 178px #a07c17, 179px 179px #a07c17, 180px 180px #a07c17, 181px 181px #a07c17, 182px 182px #a07c17, 183px 183px #a07c17, 184px 184px #a07c17, 185px 185px #a07c17, 186px 186px #a07c17, 187px 187px #a07c17, 188px 188px #a07c17, 189px 189px #a07c17, 190px 190px #a07c17, 191px 191px #a07c17, 192px 192px #a07c17, 193px 193px #a07c17, 194px 194px #a07c17, 195px 195px #a07c17, 196px 196px #a07c17, 197px 197px #a07c17, 198px 198px #a07c17, 199px 199px #a07c17, 200px 200px #a07c17;
+      display: table-cell;
+      vertical-align: bottom;
+      
+      a:hover {
+        text-decoration: none;
+      }
+      
+    }
+    
   }
 
   p {
