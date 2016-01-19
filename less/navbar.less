@@ -200,6 +200,12 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   border-radius: @border-radius-base;
+  
+  
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 
   // We remove the `outline` here, but later compensate by attaching `:hover`
   // styles to `:focus`.
@@ -213,14 +219,96 @@
     width: 22px;
     height: 2px;
     border-radius: 1px;
+    
+    
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    
   }
-  .icon-bar + .icon-bar {
+  /*.icon-bar + .icon-bar {
     margin-top: 4px;
+  }*/
+  
+  .icon-bar:nth-child(2){
+    margin-top: 6px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
   }
+  
+  .icon-bar:nth-child(3) {
+    margin-top: 0;
+    opacity: 0;
+    margin-left: -60px;
+  }
+  
+  .icon-bar:nth-child(4) {
+    margin-top: -4px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  
+  
+  
+  
 
   @media (min-width: @grid-float-breakpoint) {
     display: none;
   }
+}
+
+.navbar-toggle.collapsed {
+  position: relative;
+  float: right;
+  margin-right: @navbar-padding-horizontal;
+  padding: 9px 10px;
+  .navbar-vertical-align(34px);
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  border-radius: @border-radius-base;
+  
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  
+  .icon-bar {
+    display: block;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  .icon-bar:nth-child(2){
+    margin-top: 0;
+  }
+  
+  .icon-bar:nth-child(3) {
+    margin-top: 4px;
+    margin-left: 0;
+  }
+  
+  .icon-bar:nth-child(4) {
+    margin-top: 4px;
+  }
+  
 }
 
 
@@ -230,9 +318,10 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav {
-  margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+  margin: 0 -@navbar-padding-horizontal;
 
   > li > a {
+    font-weight: 700;
     padding-top:    10px;
     padding-bottom: 10px;
     line-height: @line-height-computed;
@@ -306,7 +395,9 @@
   }
 
   // Vertically center in expanded, horizontal navbar
-  .navbar-vertical-align(@input-height-base);
+  @media (min-width: @screen-sm-min) {
+    .navbar-vertical-align(@input-height-base);
+  }
 
   // Undo 100% width for pull classes
   @media (min-width: @grid-float-breakpoint) {
@@ -410,6 +501,8 @@
   }
 
   .navbar-nav {
+    overflow: hidden;
+    
     > li > a {
       color: @navbar-default-link-color;
 
@@ -417,6 +510,7 @@
       &:focus {
         color: @navbar-default-link-hover-color;
         background-color: @navbar-default-link-hover-bg;
+        text-shadow: 1px 1px #082BB2, 2px 2px #082BB2, 3px 3px #082BB2, 4px 4px #082BB2, 5px 5px #082BB2, 6px 6px #082BB2, 7px 7px #082BB2, 8px 8px #082BB2, 9px 9px #082BB2, 10px 10px #082BB2, 11px 11px #082BB2, 12px 12px #082BB2, 13px 13px #082BB2, 14px 14px #082BB2, 15px 15px #082BB2, 16px 16px #082BB2, 17px 17px #082BB2, 18px 18px #082BB2, 19px 19px #082BB2, 20px 20px #082BB2, 21px 21px #082BB2, 22px 22px #082BB2, 23px 23px #082BB2, 24px 24px #082BB2, 25px 25px #082BB2, 26px 26px #082BB2, 27px 27px #082BB2, 28px 28px #082BB2, 29px 29px #082BB2, 30px 30px #082BB2, 31px 31px #082BB2, 32px 32px #082BB2, 33px 33px #082BB2, 34px 34px #082BB2, 35px 35px #082BB2, 36px 36px #082BB2, 37px 37px #082BB2, 38px 38px #082BB2, 39px 39px #082BB2, 40px 40px #082BB2, 41px 41px #082BB2, 42px 42px #082BB2, 43px 43px #082BB2, 44px 44px #082BB2, 45px 45px #082BB2, 46px 46px #082BB2, 47px 47px #082BB2, 48px 48px #082BB2, 49px 49px #082BB2, 50px 50px #082BB2, 51px 51px #082BB2, 52px 52px #082BB2, 53px 53px #082BB2, 54px 54px #082BB2, 55px 55px #082BB2, 56px 56px #082BB2, 57px 57px #082BB2, 58px 58px #082BB2, 59px 59px #082BB2, 60px 60px #082BB2, 61px 61px #082BB2, 62px 62px #082BB2, 63px 63px #082BB2, 64px 64px #082BB2, 65px 65px #082BB2, 66px 66px #082BB2, 67px 67px #082BB2, 68px 68px #082BB2, 69px 69px #082BB2, 70px 70px #082BB2, 71px 71px #082BB2, 72px 72px #082BB2, 73px 73px #082BB2, 74px 74px #082BB2, 75px 75px #082BB2, 76px 76px #082BB2, 77px 77px #082BB2, 78px 78px #082BB2, 79px 79px #082BB2, 80px 80px #082BB2, 81px 81px #082BB2, 82px 82px #082BB2, 83px 83px #082BB2, 84px 84px #082BB2, 85px 85px #082BB2, 86px 86px #082BB2, 87px 87px #082BB2, 88px 88px #082BB2, 89px 89px #082BB2, 90px 90px #082BB2, 91px 91px #082BB2, 92px 92px #082BB2, 93px 93px #082BB2, 94px 94px #082BB2, 95px 95px #082BB2, 96px 96px #082BB2, 97px 97px #082BB2, 98px 98px #082BB2, 99px 99px #082BB2, 100px 100px #082BB2, 101px 101px #082BB2, 102px 102px #082BB2, 103px 103px #082BB2, 104px 104px #082BB2, 105px 105px #082BB2, 106px 106px #082BB2, 107px 107px #082BB2, 108px 108px #082BB2, 109px 109px #082BB2, 110px 110px #082BB2, 111px 111px #082BB2, 112px 112px #082BB2, 113px 113px #082BB2, 114px 114px #082BB2, 115px 115px #082BB2, 116px 116px #082BB2, 117px 117px #082BB2, 118px 118px #082BB2, 119px 119px #082BB2, 120px 120px #082BB2, 121px 121px #082BB2, 122px 122px #082BB2, 123px 123px #082BB2, 124px 124px #082BB2, 125px 125px #082BB2, 126px 126px #082BB2, 127px 127px #082BB2, 128px 128px #082BB2, 129px 129px #082BB2, 130px 130px #082BB2, 131px 131px #082BB2, 132px 132px #082BB2, 133px 133px #082BB2, 134px 134px #082BB2, 135px 135px #082BB2, 136px 136px #082BB2, 137px 137px #082BB2, 138px 138px #082BB2, 139px 139px #082BB2, 140px 140px #082BB2, 141px 141px #082BB2, 142px 142px #082BB2, 143px 143px #082BB2, 144px 144px #082BB2, 145px 145px #082BB2, 146px 146px #082BB2, 147px 147px #082BB2, 148px 148px #082BB2, 149px 149px #082BB2, 150px 150px #082BB2, 151px 151px #082BB2, 152px 152px #082BB2, 153px 153px #082BB2, 154px 154px #082BB2, 155px 155px #082BB2, 156px 156px #082BB2, 157px 157px #082BB2, 158px 158px #082BB2, 159px 159px #082BB2, 160px 160px #082BB2, 161px 161px #082BB2, 162px 162px #082BB2, 163px 163px #082BB2, 164px 164px #082BB2, 165px 165px #082BB2, 166px 166px #082BB2, 167px 167px #082BB2, 168px 168px #082BB2, 169px 169px #082BB2, 170px 170px #082BB2, 171px 171px #082BB2, 172px 172px #082BB2, 173px 173px #082BB2, 174px 174px #082BB2, 175px 175px #082BB2, 176px 176px #082BB2, 177px 177px #082BB2, 178px 178px #082BB2, 179px 179px #082BB2, 180px 180px #082BB2, 181px 181px #082BB2, 182px 182px #082BB2, 183px 183px #082BB2, 184px 184px #082BB2, 185px 185px #082BB2, 186px 186px #082BB2, 187px 187px #082BB2, 188px 188px #082BB2, 189px 189px #082BB2, 190px 190px #082BB2, 191px 191px #082BB2, 192px 192px #082BB2, 193px 193px #082BB2, 194px 194px #082BB2, 195px 195px #082BB2, 196px 196px #082BB2, 197px 197px #082BB2, 198px 198px #082BB2, 199px 199px #082BB2, 200px 200px #082BB2;
       }
     }
     > .active > a {
@@ -441,7 +535,7 @@
     border-color: @navbar-default-toggle-border-color;
     &:hover,
     &:focus {
-      background-color: @navbar-default-toggle-hover-bg;
+      //background-color: @navbar-default-toggle-hover-bg;
     }
     .icon-bar {
       background-color: @navbar-default-toggle-icon-bar-bg;
