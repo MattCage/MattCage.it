@@ -1,0 +1,3 @@
+input[type="text"].search {
+  min-width: 180px;
+}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="variables.less" server="D:/xampp/htdocs/siti/yt/" local="130976720790305370" remote="130976720790000000" Dst="1" />
+<file name="variables.less" server="D:/xampp/htdocs/siti/yt/" local="130977948689824081" remote="130977948680000000" Dst="1" />
 <file name=".csscomb.json" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name=".csslintrc" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="alerts.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
@@ -14,7 +14,7 @@
 <file name="code.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="component-animations.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="dropdowns.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
-<file name="forms.less" server="D:/xampp/htdocs/siti/yt/" local="130972855081412073" remote="130972855080000000" Dst="1" />
+<file name="forms.less" server="D:/xampp/htdocs/siti/yt/" local="130977941756882686" remote="130977941750000000" Dst="1" />
 <file name="glyphicons.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="grid.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="input-groups.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
@@ -24,7 +24,7 @@
 <file name="media.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="mixins.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="modals.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
-<file name="navbar.less" server="D:/xampp/htdocs/siti/yt/" local="130976726492825517" remote="130976726490000000" Dst="1" />
+<file name="navbar.less" server="D:/xampp/htdocs/siti/yt/" local="130977933990699979" remote="130977933990000000" Dst="1" />
 <file name="navs.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="normalize.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="pager.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
@@ -40,7 +40,7 @@
 <file name="theme.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="thumbnails.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="tooltip.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
-<file name="type.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
+<file name="type.less" server="D:/xampp/htdocs/siti/yt/" local="130977945216377466" remote="130977945210000000" Dst="1" />
 <file name="utilities.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 <file name="wells.less" server="D:/xampp/htdocs/siti/yt/" local="130928350240000000" remote="130928350240000000" Dst="1" />
 </dwsync>
